@@ -1,6 +1,10 @@
+
+@GITHUB_API_TOKEN=GITHUB_API_TOKEN
+
 ### Get information about a Pages site
-DELETE https://api.github.com/repos/afeiship/react-toast/pages
+POST https://api.github.com/repos/afeiship/react-toast/pages
 Accept: application/vnd.github.switcheroo-preview+json
+Authorization: token {{ GITHUB_API_TOKEN }}
 
 {
   "source": {
