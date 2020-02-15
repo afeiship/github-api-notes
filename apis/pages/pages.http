@@ -1,8 +1,12 @@
 
 @GITHUB_API_TOKEN=GITHUB_API_TOKEN
 
+### Get pages info
+GET https://api.github.com/repos/afeiship/boilerplate-react-component/pages
+Authorization: token {{ GITHUB_API_TOKEN }}
+
 ### Get information about a Pages site
-POST https://api.github.com/repos/afeiship/react-toast/pages
+POST https://api.github.com/repos/afeiship/boilerplate-react-component/pages
 Accept: application/vnd.github.switcheroo-preview+json
 Authorization: token {{ GITHUB_API_TOKEN }}
 
@@ -13,10 +17,7 @@ Authorization: token {{ GITHUB_API_TOKEN }}
   }
 }
 
-
-### readme
-GET https://api.github.com/repos/afeiship/react-toast/readme
-
-
-### branches
-GET https://api.github.com/repos/afeiship/ipic/branches
+### Delete pages
+Delete https://api.github.com/repos/afeiship/boilerplate-react-component/pages
+Accept: application/vnd.github.switcheroo-preview+json
+Authorization: token {{ GITHUB_API_TOKEN }}
