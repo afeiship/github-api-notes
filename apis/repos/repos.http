@@ -1,3 +1,3 @@
 ### List your repositories
-GET https://api.github.com/users/afeiship/repos
+GET https://api.github.com/users/afeiship/repos?page=1&per_page=5
 
